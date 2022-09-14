@@ -1,6 +1,3 @@
-from stringprep import in_table_a1
-
-
 i = int(input("Digite um valor: "))
 f = int(input("Digite outro valor: "))
 
