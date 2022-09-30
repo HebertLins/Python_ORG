@@ -8,6 +8,7 @@ while (n < 0 or n > 100):
     n = int(input("Digite a quantidade de valores que você deseja: "))
 
 print(s1)
+n = n - 1
 
 while (n > 0):
     n = n - 1
