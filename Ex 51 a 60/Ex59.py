@@ -1,7 +1,7 @@
 nome = []
 idade = []
 sexo = []
-
+cont = 0
 
 for c in range (0,100,1):
     n = str(input("Digite um nome: "))
@@ -20,10 +20,16 @@ for c in range (0,100,1):
     sexo.append(s)   
 
     print()
-
+print("====================")
 print("Pessoas acima de 18")
 print()
 
 for i in range (0,100,1):
     if (idade[i] >= 18):
+        cont = cont + 1
         print("Nome: {}, Idade: {}, Sexo: {}".format(nome[i], idade[i], sexo[i]))
+        if (cont == 10):
+            cont = 0
+            print()
+            input("Pressione ENTER para continuar ")
+            print()
